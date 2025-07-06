@@ -1,819 +1,1080 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BuildMaster Construction</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
-<body>
-  <!-- Preloader -->
-  <div class="preloader">
-    <div class="loader">
-      <svg viewBox="0 0 80 80">
-        <circle id="loader-circle" cx="40" cy="40" r="32"></circle>
-      </svg>
-    </div>
-  </div>
-
-  <!-- Cursor -->
-  <div class="cursor"></div>
-  <div class="cursor-follower"></div>
-
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <div class="logo">
-        <i class="fas fa-building"></i>
-        <span>BuildMintra</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BuildMaster Construction</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="loader">
+        <svg viewBox="0 0 80 80">
+          <circle id="loader-circle" cx="40" cy="40" r="32"></circle>
+        </svg>
       </div>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li><a href="#home" class="nav-link active">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#services" class="nav-link">Services</a></li>
-          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <i class="fas fa-building"></i>
+          <span>BuildMintra</span>
+        </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-buttons">
+          <button class="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <a href="#contact" class="btn btn-primary">Get a Quote</a>
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <div class="mobile-menu-container">
+        <ul class="mobile-nav-list">
+          <li><a href="#home" class="mobile-nav-link">Home</a></li>
+          <li><a href="#about" class="mobile-nav-link">About</a></li>
+          <li><a href="#services" class="mobile-nav-link">Services</a></li>
+          <li><a href="#portfolio" class="mobile-nav-link">Portfolio</a></li>
+          <li>
+            <a href="#testimonials" class="mobile-nav-link">Testimonials</a>
+          </li>
+          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
         </ul>
-      </nav>
-      <div class="header-buttons">
-        <button class="theme-toggle">
-          <i class="fas fa-moon"></i>
-        </button>
-        <a href="#contact" class="btn btn-primary">Get a Quote</a>
-        <div class="menu-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="mobile-social">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
         </div>
       </div>
     </div>
-  </header>
 
-  <!-- Mobile Menu -->
-  <div class="mobile-menu">
-    <div class="mobile-menu-container">
-      <ul class="mobile-nav-list">
-        <li><a href="#home" class="mobile-nav-link">Home</a></li>
-        <li><a href="#about" class="mobile-nav-link">About</a></li>
-        <li><a href="#services" class="mobile-nav-link">Services</a></li>
-        <li><a href="#portfolio" class="mobile-nav-link">Portfolio</a></li>
-        <li><a href="#testimonials" class="mobile-nav-link">Testimonials</a></li>
-        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
-      </ul>
-      <div class="mobile-social">
-        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-video-container">
+        <video autoplay muted loop class="hero-video">
+          <source
+            src="https://assets.mixkit.co/videos/preview/mixkit-construction-workers-working-on-a-construction-site-13993-large.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div class="hero-overlay"></div>
       </div>
-    </div>
-  </div>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-video-container">
-      <video autoplay muted loop class="hero-video">
-        <source src="https://assets.mixkit.co/videos/preview/mixkit-construction-workers-working-on-a-construction-site-13993-large.mp4" type="video/mp4">
-      </video>
-      <div class="hero-overlay"></div>
-    </div>
-    <div class="hero-content">
-      <div class="container">
-        <div class="hero-text" data-aos="fade-up" data-aos-delay="200">
-          <h1 class="hero-title">Building <span class="text-accent">Dreams</span> Into <span class="text-accent">Reality</span></h1>
-          <p class="hero-subtitle">Premium construction services for residential and commercial projects. Quality craftsmanship, innovative designs, and exceptional customer service.</p>
-          <div class="hero-buttons">
-            <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
-            <a href="#portfolio" class="btn btn-outline">View Our Projects</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="scroll-down">
-      <a href="#about">
-        <span class="mouse">
-          <span class="mouse-wheel"></span>
-        </span>
-        <span class="scroll-text">Scroll Down</span>
-      </a>
-    </div>
-    <div class="hero-shapes">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-      <div class="shape shape-3"></div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="about section-padding">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <span class="section-subtitle">About Us</span>
-        <h2 class="section-title">20+ Years of Excellence in Construction</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="about-content">
-        <div class="about-text" data-aos="fade-right" data-aos-delay="200">
-          <p>Founded in 2003, BuildMaster has grown from a small local contractor to one of the most trusted construction companies in the region. Our journey has been built on a foundation of quality, integrity, and customer satisfaction.</p>
-          <div class="about-features">
-            <div class="feature" data-aos="fade-up" data-aos-delay="300">
-              <div class="feature-icon">
-                <i class="fas fa-check-circle"></i>
-              </div>
-              <div class="feature-text">
-                <h3>Quality</h3>
-                <p>Premium materials and craftsmanship</p>
-              </div>
-            </div>
-            <div class="feature" data-aos="fade-up" data-aos-delay="400">
-              <div class="feature-icon">
-                <i class="fas fa-shield-alt"></i>
-              </div>
-              <div class="feature-text">
-                <h3>Safety</h3>
-                <p>Rigorous standards on every project</p>
-              </div>
-            </div>
-            <div class="feature" data-aos="fade-up" data-aos-delay="500">
-              <div class="feature-icon">
-                <i class="fas fa-star"></i>
-              </div>
-              <div class="feature-text">
-                <h3>Innovation</h3>
-                <p>Modern techniques and solutions</p>
-              </div>
-            </div>
-            <div class="feature" data-aos="fade-up" data-aos-delay="600">
-              <div class="feature-icon">
-                <i class="fas fa-clock"></i>
-              </div>
-              <div class="feature-text">
-                <h3>Timeliness</h3>
-                <p>On-time delivery, every time</p>
-              </div>
-            </div>
-          </div>
-          <a href="#services" class="btn btn-primary">Learn More About Us</a>
-        </div>
-        <div class="about-image" data-aos="fade-left" data-aos-delay="200">
-          <div class="image-container">
-            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Construction team">
-          </div>
-          <div class="experience-box">
-            <span class="number">20+</span>
-            <span class="text">Years of Experience</span>
-          </div>
-        </div>
-      </div>
-      <div class="counter-section">
-        <div class="counter-container">
-          <div class="counter-item" data-aos="fade-up" data-aos-delay="200">
-            <div class="counter-icon">
-              <i class="fas fa-building"></i>
-            </div>
-            <div class="counter-number" data-target="500">0</div>
-            <div class="counter-text">Projects Completed</div>
-          </div>
-          <div class="counter-item" data-aos="fade-up" data-aos-delay="300">
-            <div class="counter-icon">
-              <i class="fas fa-users"></i>
-            </div>
-            <div class="counter-number" data-target="120">0</div>
-            <div class="counter-text">Team Members</div>
-          </div>
-          <div class="counter-item" data-aos="fade-up" data-aos-delay="400">
-            <div class="counter-icon">
-              <i class="fas fa-trophy"></i>
-            </div>
-            <div class="counter-number" data-target="35">0</div>
-            <div class="counter-text">Awards Won</div>
-          </div>
-          <div class="counter-item" data-aos="fade-up" data-aos-delay="500">
-            <div class="counter-icon">
-              <i class="fas fa-smile"></i>
-            </div>
-            <div class="counter-number" data-target="450">0</div>
-            <div class="counter-text">Happy Clients</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="services section-padding bg-light">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <span class="section-subtitle">Our Services</span>
-        <h2 class="section-title">Comprehensive Construction Solutions</h2>
-        <div class="section-line"></div>
-        <p class="section-description">We offer a wide range of construction services to meet all your building needs, from residential homes to commercial complexes.</p>
-      </div>
-      <div class="services-grid">
-        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="service-icon">
-            <i class="fas fa-home"></i>
-          </div>
-          <h3 class="service-title">Home Construction</h3>
-          <p class="service-description">Custom home building with attention to detail and quality craftsmanship for your dream home.</p>
-          <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
-          <div class="service-bg-icon">
-            <i class="fas fa-home"></i>
-          </div>
-        </div>
-        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="service-icon">
-            <i class="fas fa-building"></i>
-          </div>
-          <h3 class="service-title">Apartment Buildings</h3>
-          <p class="service-description">Multi-unit residential complexes built with efficiency, durability, and modern amenities.</p>
-          <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
-          <div class="service-bg-icon">
-            <i class="fas fa-building"></i>
-          </div>
-        </div>
-        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="service-icon">
-            <i class="fas fa-city"></i>
-          </div>
-          <h3 class="service-title">Commercial Offices</h3>
-          <p class="service-description">Functional and impressive commercial spaces designed for productivity and brand image.</p>
-          <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
-          <div class="service-bg-icon">
-            <i class="fas fa-city"></i>
-          </div>
-        </div>
-        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
-          <div class="service-icon">
-            <i class="fas fa-hammer"></i>
-          </div>
-          <h3 class="service-title">Renovations</h3>
-          <p class="service-description">Transform existing spaces with our expert renovation and remodeling services.</p>
-          <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
-          <div class="service-bg-icon">
-            <i class="fas fa-hammer"></i>
-          </div>
-        </div>
-        <div class="service-card" data-aos="fade-up" data-aos-delay="500">
-          <div class="service-icon">
-            <i class="fas fa-paint-roller"></i>
-          </div>
-          <h3 class="service-title">Interior Design</h3>
-          <p class="service-description">Professional interior design and architecture support for cohesive, beautiful spaces.</p>
-          <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
-          <div class="service-bg-icon">
-            <i class="fas fa-paint-roller"></i>
-          </div>
-        </div>
-        <div class="service-card" data-aos="fade-up" data-aos-delay="600">
-          <div class="service-icon">
-            <i class="fas fa-tasks"></i>
-          </div>
-          <h3 class="service-title">Project Management</h3>
-          <p class="service-description">Comprehensive project management and consultancy services for construction projects.</p>
-          <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
-          <div class="service-bg-icon">
-            <i class="fas fa-tasks"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="services-shapes">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-    </div>
-  </section>
-
-  <!-- Process Section -->
-  <section class="process section-padding">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <span class="section-subtitle">Our Process</span>
-        <h2 class="section-title">How We Work</h2>
-        <div class="section-line"></div>
-        <p class="section-description">Our streamlined process ensures your project runs smoothly from concept to completion.</p>
-      </div>
-      <div class="process-steps">
-        <div class="process-step" data-aos="fade-right" data-aos-delay="100">
-          <div class="step-number">01</div>
-          <div class="step-content">
-            <h3 class="step-title">Consultation</h3>
-            <p class="step-description">We begin with a thorough consultation to understand your vision, requirements, and budget.</p>
-          </div>
-        </div>
-        <div class="process-step" data-aos="fade-right" data-aos-delay="200">
-          <div class="step-number">02</div>
-          <div class="step-content">
-            <h3 class="step-title">Planning & Design</h3>
-            <p class="step-description">Our team creates detailed plans and designs tailored to your specific needs and preferences.</p>
-          </div>
-        </div>
-        <div class="process-step" data-aos="fade-right" data-aos-delay="300">
-          <div class="step-number">03</div>
-          <div class="step-content">
-            <h3 class="step-title">Construction</h3>
-            <p class="step-description">We execute the project with precision, keeping you informed throughout the construction phase.</p>
-          </div>
-        </div>
-        <div class="process-step" data-aos="fade-right" data-aos-delay="400">
-          <div class="step-number">04</div>
-          <div class="step-content">
-            <h3 class="step-title">Quality Assurance</h3>
-            <p class="step-description">Rigorous quality checks ensure every aspect of your project meets our high standards.</p>
-          </div>
-        </div>
-        <div class="process-step" data-aos="fade-right" data-aos-delay="500">
-          <div class="step-number">05</div>
-          <div class="step-content">
-            <h3 class="step-title">Completion & Handover</h3>
-            <p class="step-description">We deliver your completed project on time and provide comprehensive support after handover.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="portfolio section-padding bg-light">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <span class="section-subtitle">Our Portfolio</span>
-        <h2 class="section-title">Showcasing Our Finest Work</h2>
-        <div class="section-line"></div>
-        <p class="section-description">Browse through our completed projects to see the quality and diversity of our construction work.</p>
-      </div>
-      <div class="portfolio-filter" data-aos="fade-up" data-aos-delay="200">
-        <button class="filter-btn active" data-filter="all">All Projects</button>
-        <button class="filter-btn" data-filter="residential">Residential</button>
-        <button class="filter-btn" data-filter="commercial">Commercial</button>
-        <button class="filter-btn" data-filter="apartments">Apartments</button>
-      </div>
-      <div class="portfolio-grid">
-        <div class="portfolio-item residential" data-aos="fade-up" data-aos-delay="100">
-          <div class="portfolio-img">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Modern Family Home">
-          </div>
-          <div class="portfolio-overlay">
-            <div class="portfolio-content">
-              <span class="portfolio-category">Residential</span>
-              <h3 class="portfolio-title">Modern Family Home</h3>
-              <p class="portfolio-description">Custom-built 4-bedroom family home with modern amenities</p>
-              <a href="#" class="portfolio-link">View Project</a>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-item apartments" data-aos="fade-up" data-aos-delay="200">
-          <div class="portfolio-img">
-            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Downtown Apartments">
-          </div>
-          <div class="portfolio-overlay">
-            <div class="portfolio-content">
-              <span class="portfolio-category">Apartments</span>
-              <h3 class="portfolio-title">Downtown Apartments</h3>
-              <p class="portfolio-description">Luxury apartment complex with 120 units in downtown area</p>
-              <a href="#" class="portfolio-link">View Project</a>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-item commercial" data-aos="fade-up" data-aos-delay="300">
-          <div class="portfolio-img">
-            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Corporate Headquarters">
-          </div>
-          <div class="portfolio-overlay">
-            <div class="portfolio-content">
-              <span class="portfolio-category">Commercial</span>
-              <h3 class="portfolio-title">Corporate Headquarters</h3>
-              <p class="portfolio-description">10-story office building with state-of-the-art facilities</p>
-              <a href="#" class="portfolio-link">View Project</a>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-item residential" data-aos="fade-up" data-aos-delay="400">
-          <div class="portfolio-img">
-            <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Luxury Villa Renovation">
-          </div>
-          <div class="portfolio-overlay">
-            <div class="portfolio-content">
-              <span class="portfolio-category">Residential</span>
-              <h3 class="portfolio-title">Luxury Villa Renovation</h3>
-              <p class="portfolio-description">Complete renovation of a 6,000 sq ft luxury villa</p>
-              <a href="#" class="portfolio-link">View Project</a>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-item commercial" data-aos="fade-up" data-aos-delay="500">
-          <div class="portfolio-img">
-            <img src="https://images.unsplash.com/photo-1519567770579-c2fc5e9ca471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Shopping Mall">
-          </div>
-          <div class="portfolio-overlay">
-            <div class="portfolio-content">
-              <span class="portfolio-category">Commercial</span>
-              <h3 class="portfolio-title">Shopping Mall</h3>
-              <p class="portfolio-description">Multi-level shopping center with 50+ retail spaces</p>
-              <a href="#" class="portfolio-link">View Project</a>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-item apartments" data-aos="fade-up" data-aos-delay="600">
-          <div class="portfolio-img">
-            <img src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1084&q=80" alt="Waterfront Condos">
-          </div>
-          <div class="portfolio-overlay">
-            <div class="portfolio-content">
-              <span class="portfolio-category">Apartments</span>
-              <h3 class="portfolio-title">Waterfront Condos</h3>
-              <p class="portfolio-description">Premium condominium complex with waterfront views</p>
-              <a href="#" class="portfolio-link">View Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio-more" data-aos="fade-up" data-aos-delay="700">
-        <a href="#" class="btn btn-primary">View All Projects</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Why Choose Us Section -->
-  <section class="why-choose-us section-padding">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <span class="section-subtitle">Why Choose Us</span>
-        <h2 class="section-title">The BuildMaster Difference</h2>
-        <div class="section-line"></div>
-        <p class="section-description">What sets us apart from other construction companies and why our clients trust us with their projects.</p>
-      </div>
-      <div class="why-choose-grid">
-        <div class="why-choose-item" data-aos="fade-up" data-aos-delay="100">
-          <div class="why-choose-icon">
-            <i class="fas fa-user-tie"></i>
-          </div>
-          <h3 class="why-choose-title">Expert Team</h3>
-          <p class="why-choose-description">Our team consists of certified professionals with decades of combined experience.</p>
-        </div>
-        <div class="why-choose-item" data-aos="fade-up" data-aos-delay="200">
-          <div class="why-choose-icon">
-            <i class="fas fa-clock"></i>
-          </div>
-          <h3 class="why-choose-title">On-Time Delivery</h3>
-          <p class="why-choose-description">We pride ourselves on completing projects within the agreed timeframe.</p>
-        </div>
-        <div class="why-choose-item" data-aos="fade-up" data-aos-delay="300">
-          <div class="why-choose-icon">
-            <i class="fas fa-gem"></i>
-          </div>
-          <h3 class="why-choose-title">Premium Materials</h3>
-          <p class="why-choose-description">We use only the highest quality materials for durability and aesthetics.</p>
-        </div>
-        <div class="why-choose-item" data-aos="fade-up" data-aos-delay="400">
-          <div class="why-choose-icon">
-            <i class="fas fa-heart"></i>
-          </div>
-          <h3 class="why-choose-title">Customer-First Approach</h3>
-          <p class="why-choose-description">Your satisfaction is our priority throughout the entire construction process.</p>
-        </div>
-      </div>
-    </div>
-    <div class="parallax-section">
-      <div class="parallax-bg"></div>
-      <div class="parallax-content">
+      <div class="hero-content">
         <div class="container">
-          <div class="parallax-text" data-aos="fade-up">
-            <h2>Bringing Your Vision to Life</h2>
-            <p>From concept to completion, we're committed to delivering exceptional quality and service.</p>
-            <a href="#contact" class="btn btn-light">Start Your Project Today</a>
+          <div class="hero-text" data-aos="fade-up" data-aos-delay="200">
+            <h1 class="hero-title">
+              Building <span class="text-accent">Dreams</span> Into
+              <span class="text-accent">Reality</span>
+            </h1>
+            <p class="hero-subtitle">
+              Premium construction services for residential and commercial
+              projects. Quality craftsmanship, innovative designs, and
+              exceptional customer service.
+            </p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+              <a href="#portfolio" class="btn btn-outline">View Our Projects</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="scroll-down">
+        <a href="#about">
+          <span class="mouse">
+            <span class="mouse-wheel"></span>
+          </span>
+          <span class="scroll-text">Scroll Down</span>
+        </a>
+      </div>
+      <div class="hero-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+    </section>
 
-  <!-- Testimonials Section -->
-  <section id="testimonials" class="testimonials section-padding bg-light">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <span class="section-subtitle">Testimonials</span>
-        <h2 class="section-title">What Our Clients Say</h2>
-        <div class="section-line"></div>
-        <p class="section-description">Don't just take our word for it. Hear from our satisfied clients about their experience working with BuildMaster.</p>
-      </div>
-      <div class="testimonial-slider" data-aos="fade-up" data-aos-delay="200">
-        <div class="testimonial-track">
-          <div class="testimonial-slide">
-            <div class="testimonial-card">
-              <div class="testimonial-quote">
-                <i class="fas fa-quote-left"></i>
-              </div>
-              <p class="testimonial-text">BuildMaster transformed our vision into reality. Their attention to detail and quality craftsmanship exceeded our expectations. We couldn't be happier with our new home.</p>
-              <div class="testimonial-author">
-                <div class="testimonial-author-img">
-                  <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sarah Johnson">
-                </div>
-                <div class="testimonial-author-info">
-                  <h4 class="testimonial-author-name">Sarah Johnson</h4>
-                  <p class="testimonial-author-role">Homeowner</p>
-                </div>
-                <div class="testimonial-rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-slide">
-            <div class="testimonial-card">
-              <div class="testimonial-quote">
-                <i class="fas fa-quote-left"></i>
-              </div>
-              <p class="testimonial-text">We've worked with BuildMaster on multiple apartment projects. Their professionalism, adherence to timelines, and quality of work make them our go-to construction partner.</p>
-              <div class="testimonial-author">
-                <div class="testimonial-author-img">
-                  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
-                </div>
-                <div class="testimonial-author-info">
-                  <h4 class="testimonial-author-name">Michael Chen</h4>
-                  <p class="testimonial-author-role">Property Developer</p>
-                </div>
-                <div class="testimonial-rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-slide">
-            <div class="testimonial-card">
-              <div class="testimonial-quote">
-                <i class="fas fa-quote-left"></i>
-              </div>
-              <p class="testimonial-text">The BuildMaster team was exceptional in constructing our new office space. They understood our needs and delivered a functional, beautiful workspace on time and within budget.</p>
-              <div class="testimonial-author">
-                <div class="testimonial-author-img">
-                  <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="Emily Rodriguez">
-                </div>
-                <div class="testimonial-author-info">
-                  <h4 class="testimonial-author-name">Emily Rodriguez</h4>
-                  <p class="testimonial-author-role">Business Owner</p>
-                </div>
-                <div class="testimonial-rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-slide">
-            <div class="testimonial-card">
-              <div class="testimonial-quote">
-                <i class="fas fa-quote-left"></i>
-              </div>
-              <p class="testimonial-text">As an architect, I appreciate working with contractors who respect design integrity while offering practical solutions. BuildMaster excels at this balance, making them ideal partners.</p>
-              <div class="testimonial-author">
-                <div class="testimonial-author-img">
-                  <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="David Thompson">
-                </div>
-                <div class="testimonial-author-info">
-                  <h4 class="testimonial-author-name">David Thompson</h4>
-                  <p class="testimonial-author-role">Architect</p>
-                </div>
-                <div class="testimonial-rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-controls">
-          <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
-          <div class="testimonial-dots">
-            <span class="testimonial-dot active"></span>
-            <span class="testimonial-dot"></span>
-            <span class="testimonial-dot"></span>
-            <span class="testimonial-dot"></span>
-          </div>
-          <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="cta-section">
-    <div class="container">
-      <div class="cta-content" data-aos="fade-up">
-        <h2 class="cta-title">Let's Build Together</h2>
-        <p class="cta-text">Ready to start your construction project? Contact us today for a free consultation and quote. Let's turn your vision into reality.</p>
-        <a href="#contact" class="btn btn-light">Get a Free Quote</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact section-padding">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <span class="section-subtitle">Contact Us</span>
-        <h2 class="section-title">Get In Touch With Our Team</h2>
-        <div class="section-line"></div>
-        <p class="section-description">Have questions or ready to start your project? Reach out to us using the form below or visit our office.</p>
-      </div>
-      <div class="contact-content">
-        <div class="contact-form-container" data-aos="fade-right" data-aos-delay="200">
-          <form class="contact-form">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" placeholder="John Doe" required>
-              </div>
-              <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" placeholder="john@example.com" required>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" placeholder="(123) 456-7890">
-            </div>
-            <div class="form-group">
-              <label for="service">Service Required</label>
-              <select id="service" required>
-                <option value="" disabled selected>Select a service</option>
-                <option value="home">Home Construction</option>
-                <option value="apartment">Apartment Buildings</option>
-                <option value="commercial">Commercial Offices</option>
-                <option value="renovation">Renovations</option>
-                <option value="interior">Interior Design</option>
-                <option value="management">Project Management</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" placeholder="Tell us about your project..." rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          </form>
-        </div>
-        <div class="contact-info" data-aos="fade-left" data-aos-delay="200">
-          <div class="map-container">
-            <div id="map">
-              <!-- Google Map will be embedded here -->
-              <img src="https://maps.googleapis.com/maps/api/staticmap?center=40.7128,-74.0060&zoom=13&size=600x300&maptype=roadmap&markers=color:red%7C40.7128,-74.0060&key=YOUR_API_KEY" alt="Map" class="placeholder-map">
-            </div>
-          </div>
-          <div class="info-container">
-            <h3>Contact Information</h3>
-            <div class="info-item">
-              <div class="info-icon">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div class="info-text">
-                <h4>Office Address</h4>
-                <p>123 Construction Ave, Building City, BC 12345</p>
-              </div>
-            </div>
-            <div class="info-item">
-              <div class="info-icon">
-                <i class="fas fa-phone-alt"></i>
-              </div>
-              <div class="info-text">
-                <h4>Phone Number</h4>
-                <p>(123) 456-7890</p>
-              </div>
-            </div>
-            <div class="info-item">
-              <div class="info-icon">
-                <i class="fas fa-envelope"></i>
-              </div>
-              <div class="info-text">
-                <h4>Email Address</h4>
-                <p>info@buildmaster.com</p>
-              </div>
-            </div>
-            <div class="business-hours">
-              <h4>Business Hours</h4>
-              <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
-              <p>Saturday: 9:00 AM - 2:00 PM</p>
-              <p>Sunday: Closed</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Partners Section -->
-  <section class="partners section-padding bg-light">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <span class="section-subtitle">Our Partners</span>
-        <h2 class="section-title">Trusted By Industry Leaders</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="partners-slider" data-aos="fade-up" data-aos-delay="200">
-        <div class="partner-logo">
-          <img src="https://via.placeholder.com/150x80?text=Partner+1" alt="Partner 1">
-        </div>
-        <div class="partner-logo">
-          <img src="https://via.placeholder.com/150x80?text=Partner+2" alt="Partner 2">
-        </div>
-        <div class="partner-logo">
-          <img src="https://via.placeholder.com/150x80?text=Partner+3" alt="Partner 3">
-        </div>
-        <div class="partner-logo">
-          <img src="https://via.placeholder.com/150x80?text=Partner+4" alt="Partner 4">
-        </div>
-        <div class="partner-logo">
-          <img src="https://via.placeholder.com/150x80?text=Partner+5" alt="Partner 5">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-top">
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
       <div class="container">
-        <div class="footer-content">
-          <div class="footer-about">
-            <div class="footer-logo">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-subtitle">About Us</span>
+          <h2 class="section-title">20+ Years of Excellence in Construction</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="about-content">
+          <div class="about-text" data-aos="fade-right" data-aos-delay="200">
+            <p>
+              Founded in 2003, BuildMaster has grown from a small local
+              contractor to one of the most trusted construction companies in
+              the region. Our journey has been built on a foundation of quality,
+              integrity, and customer satisfaction.
+            </p>
+            <div class="about-features">
+              <div class="feature" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-icon">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="feature-text">
+                  <h3>Quality</h3>
+                  <p>Premium materials and craftsmanship</p>
+                </div>
+              </div>
+              <div class="feature" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-icon">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="feature-text">
+                  <h3>Safety</h3>
+                  <p>Rigorous standards on every project & Major All things</p>
+                </div>
+              </div>
+              <div class="feature" data-aos="fade-up" data-aos-delay="500">
+                <div class="feature-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="feature-text">
+                  <h3>Innovation</h3>
+                  <p>Modern techniques and solutions</p>
+                </div>
+              </div>
+              <div class="feature" data-aos="fade-up" data-aos-delay="600">
+                <div class="feature-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="feature-text">
+                  <h3>Timeliness</h3>
+                  <p>On-time delivery, every time</p>
+                </div>
+              </div>
+            </div>
+            <a href="#services" class="btn btn-primary">Learn More About Us</a>
+          </div>
+          <div class="about-image" data-aos="fade-left" data-aos-delay="200">
+            <div class="image-container">
+              <img
+                src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                alt="Construction team"
+              />
+            </div>
+            <div class="experience-box">
+              <span class="number">20+</span>
+              <span class="text">Years of Experience</span>
+            </div>
+          </div>
+        </div>
+        <div class="counter-section">
+          <div class="counter-container">
+            <div class="counter-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="counter-icon">
+                <i class="fas fa-building"></i>
+              </div>
+              <div class="counter-number" data-target="500">0</div>
+              <div class="counter-text">Projects Completed</div>
+            </div>
+            <div class="counter-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="counter-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="counter-number" data-target="120">0</div>
+              <div class="counter-text">Team Members</div>
+            </div>
+            <div class="counter-item" data-aos="fade-up" data-aos-delay="400">
+              <div class="counter-icon">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <div class="counter-number" data-target="35">0</div>
+              <div class="counter-text">Awards We Won</div>
+            </div>
+            <div class="counter-item" data-aos="fade-up" data-aos-delay="500">
+              <div class="counter-icon">
+                <i class="fas fa-smile"></i>
+              </div>
+              <div class="counter-number" data-target="450">0</div>
+              <div class="counter-text">Happy Clients</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-padding bg-light">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-subtitle">Our Services</span>
+          <h2 class="section-title">Comprehensive Construction Solutions</h2>
+          <div class="section-line"></div>
+          <p class="section-description">
+            We provide a wide range of construction services to meet all your
+            building needs, from residential homes to commercial complexes.
+          </p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            <h3 class="service-title">Home Construction</h3>
+            <p class="service-description">
+              Custom home building with attention to detail and quality
+              craftsmanship for your dream home.
+            </p>
+            <a href="#" class="service-link"
+              >Learn more <i class="fas fa-arrow-right"></i
+            ></a>
+            <div class="service-bg-icon">
+              <i class="fas fa-home"></i>
+            </div>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-icon">
               <i class="fas fa-building"></i>
-              <span>BuildMaster</span>
             </div>
-            <p>Premium construction services for residential and commercial projects. Quality craftsmanship, innovative designs, and exceptional customer service.</p>
-            <div class="footer-social">
-              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <h3 class="service-title">Apartment Buildings</h3>
+            <p class="service-description">
+              Multi-unit residential complexes built with efficiency,
+              durability, and modern amenities.
+            </p>
+            <a href="#" class="service-link"
+              >Learn more <i class="fas fa-arrow-right"></i
+            ></a>
+            <div class="service-bg-icon">
+              <i class="fas fa-building"></i>
             </div>
           </div>
-          <div class="footer-links">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#testimonials">Testimonials</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-icon">
+              <i class="fas fa-city"></i>
+            </div>
+            <h3 class="service-title">Commercial Offices</h3>
+            <p class="service-description">
+              Functional and impressive commercial spaces designed for
+              productivity and brand image.
+            </p>
+            <a href="#" class="service-link"
+              >Learn more <i class="fas fa-arrow-right"></i
+            ></a>
+            <div class="service-bg-icon">
+              <i class="fas fa-city"></i>
+            </div>
           </div>
-          <div class="footer-services">
-            <h3>Services</h3>
-            <ul>
-              <li><a href="#">Home Construction</a></li>
-              <li><a href="#">Apartment Buildings</a></li>
-              <li><a href="#">Commercial Offices</a></li>
-              <li><a href="#">Renovations</a></li>
-              <li><a href="#">Interior Design</a></li>
-              <li><a href="#">Project Management</a></li>
-            </ul>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-icon">
+              <i class="fas fa-hammer"></i>
+            </div>
+            <h3 class="service-title">Renovations</h3>
+            <p class="service-description">
+              Transform existing spaces with our expert renovation and
+              remodeling services.
+            </p>
+            <a href="#" class="service-link"
+              >Learn more <i class="fas fa-arrow-right"></i
+            ></a>
+            <div class="service-bg-icon">
+              <i class="fas fa-hammer"></i>
+            </div>
           </div>
-          <div class="footer-newsletter">
-            <h3>Newsletter</h3>
-            <p>Subscribe to our newsletter for the latest updates and offers.</p>
-            <form class="newsletter-form">
-              <input type="email" placeholder="Your email address" required>
-              <button type="submit" class="btn btn-primary">Subscribe</button>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-icon">
+              <i class="fas fa-paint-roller"></i>
+            </div>
+            <h3 class="service-title">Interior Design</h3>
+            <p class="service-description">
+              Professional interior design and architecture support for
+              cohesive, beautiful spaces.
+            </p>
+            <a href="#" class="service-link"
+              >Learn more <i class="fas fa-arrow-right"></i
+            ></a>
+            <div class="service-bg-icon">
+              <i class="fas fa-paint-roller"></i>
+            </div>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-icon">
+              <i class="fas fa-tasks"></i>
+            </div>
+            <h3 class="service-title">Project Management</h3>
+            <p class="service-description">
+              Comprehensive project management and consultancy services for
+              construction projects.
+            </p>
+            <a href="#" class="service-link"
+              >Learn more <i class="fas fa-arrow-right"></i
+            ></a>
+            <div class="service-bg-icon">
+              <i class="fas fa-tasks"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="services-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process section-padding">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-subtitle">Our Process</span>
+          <h2 class="section-title">How We Work</h2>
+          <div class="section-line"></div>
+          <p class="section-description">
+            Our streamlined process ensures your project runs smoothly from
+            concept to completion.
+          </p>
+        </div>
+        <div class="process-steps">
+          <div class="process-step" data-aos="fade-right" data-aos-delay="100">
+            <div class="step-number">01</div>
+            <div class="step-content">
+              <h3 class="step-title">Consultation</h3>
+              <p class="step-description">
+                We begin with a thorough consultation to understand your vision,
+                requirements, and budget.
+              </p>
+            </div>
+          </div>
+          <div class="process-step" data-aos="fade-right" data-aos-delay="200">
+            <div class="step-number">02</div>
+            <div class="step-content">
+              <h3 class="step-title">Planning & Design</h3>
+              <p class="step-description">
+                Our team creates detailed plans and designs tailored to your
+                specific needs and preferences.
+              </p>
+            </div>
+          </div>
+          <div class="process-step" data-aos="fade-right" data-aos-delay="300">
+            <div class="step-number">03</div>
+            <div class="step-content">
+              <h3 class="step-title">Construction</h3>
+              <p class="step-description">
+                We execute the project with precision, keeping you informed
+                throughout the construction phase.
+              </p>
+            </div>
+          </div>
+          <div class="process-step" data-aos="fade-right" data-aos-delay="400">
+            <div class="step-number">04</div>
+            <div class="step-content">
+              <h3 class="step-title">Quality Assurance</h3>
+              <p class="step-description">
+                Rigorous quality checks ensure every aspect of your project
+                meets our high standards.
+              </p>
+            </div>
+          </div>
+          <div class="process-step" data-aos="fade-right" data-aos-delay="500">
+            <div class="step-number">05</div>
+            <div class="step-content">
+              <h3 class="step-title">Completion & Handover</h3>
+              <p class="step-description">
+                We deliver your completed project on time and provide
+                comprehensive support after handover.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section-padding bg-light">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-subtitle">Our Portfolio</span>
+          <h2 class="section-title">Showcasing Our Finest Work</h2>
+          <div class="section-line"></div>
+          <p class="section-description">
+            Browse through our completed projects to see the quality and
+            diversity of our construction work.
+          </p>
+        </div>
+        <div class="portfolio-filter" data-aos="fade-up" data-aos-delay="200">
+          <button class="filter-btn active" data-filter="all">
+            All Projects
+          </button>
+          <button class="filter-btn" data-filter="residential">
+            Residential
+          </button>
+          <button class="filter-btn" data-filter="commercial">
+            Commercial
+          </button>
+          <button class="filter-btn" data-filter="apartments">
+            Apartments
+          </button>
+        </div>
+        <div class="portfolio-grid">
+          <div
+            class="portfolio-item residential"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="portfolio-img">
+              <img
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                alt="Modern Family Home"
+              />
+            </div>
+            <div class="portfolio-overlay">
+              <div class="portfolio-content">
+                <span class="portfolio-category">Residential</span>
+                <h3 class="portfolio-title">Modern Family Home</h3>
+                <p class="portfolio-description">
+                  Custom-built 4-bedroom family home with modern amenities
+                </p>
+                <a href="#" class="portfolio-link">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="portfolio-item apartments"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="portfolio-img">
+              <img
+                src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                alt="Downtown Apartments"
+              />
+            </div>
+            <div class="portfolio-overlay">
+              <div class="portfolio-content">
+                <span class="portfolio-category">Apartments</span>
+                <h3 class="portfolio-title">Downtown Apartments</h3>
+                <p class="portfolio-description">
+                  Luxury apartment complex with 120 units in downtown area
+                </p>
+                <a href="#" class="portfolio-link">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="portfolio-item commercial"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="portfolio-img">
+              <img
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                alt="Corporate Headquarters"
+              />
+            </div>
+            <div class="portfolio-overlay">
+              <div class="portfolio-content">
+                <span class="portfolio-category">Commercial</span>
+                <h3 class="portfolio-title">Corporate Headquarters</h3>
+                <p class="portfolio-description">
+                  10-story office building with state-of-the-art facilities
+                </p>
+                <a href="#" class="portfolio-link">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="portfolio-item residential"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="portfolio-img">
+              <img
+                src="https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                alt="Luxury Villa Renovation"
+              />
+            </div>
+            <div class="portfolio-overlay">
+              <div class="portfolio-content">
+                <span class="portfolio-category">Residential</span>
+                <h3 class="portfolio-title">Luxury Villa Renovation</h3>
+                <p class="portfolio-description">
+                  Complete renovation of a 6,000 sq ft luxury villa
+                </p>
+                <a href="#" class="portfolio-link">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="portfolio-item commercial"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="portfolio-img">
+              <img
+                src="https://images.unsplash.com/photo-1519567770579-c2fc5e9ca471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                alt="Shopping Mall"
+              />
+            </div>
+            <div class="portfolio-overlay">
+              <div class="portfolio-content">
+                <span class="portfolio-category">Commercial</span>
+                <h3 class="portfolio-title">Shopping Mall</h3>
+                <p class="portfolio-description">
+                  Multi-level shopping center with 50+ retail spaces
+                </p>
+                <a href="#" class="portfolio-link">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="portfolio-item apartments"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="portfolio-img">
+              <img
+                src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1084&q=80"
+                alt="Waterfront Condos"
+              />
+            </div>
+            <div class="portfolio-overlay">
+              <div class="portfolio-content">
+                <span class="portfolio-category">Apartments</span>
+                <h3 class="portfolio-title">Waterfront Condos</h3>
+                <p class="portfolio-description">
+                  Premium condominium complex with waterfront views
+                </p>
+                <a href="#" class="portfolio-link">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-more" data-aos="fade-up" data-aos-delay="700">
+          <a href="#" class="btn btn-primary">View All Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us section-padding">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-subtitle">Why Choose Us</span>
+          <h2 class="section-title">The BuildMaster Difference</h2>
+          <div class="section-line"></div>
+          <p class="section-description">
+            What sets us apart from other construction companies and why our
+            clients trust us with their projects.
+          </p>
+        </div>
+        <div class="why-choose-grid">
+          <div class="why-choose-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="why-choose-icon">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <h3 class="why-choose-title">Expert Team</h3>
+            <p class="why-choose-description">
+              Our team consists of certified professionals with decades of
+              combined experience.
+            </p>
+          </div>
+          <div class="why-choose-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="why-choose-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3 class="why-choose-title">On-Time Delivery</h3>
+            <p class="why-choose-description">
+              We pride ourselves on completing projects within the agreed
+              timeframe.
+            </p>
+          </div>
+          <div class="why-choose-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="why-choose-icon">
+              <i class="fas fa-gem"></i>
+            </div>
+            <h3 class="why-choose-title">Premium Materials</h3>
+            <p class="why-choose-description">
+              We use only the highest quality materials for durability and
+              aesthetics.
+            </p>
+          </div>
+          <div class="why-choose-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="why-choose-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3 class="why-choose-title">Customer-First Approach</h3>
+            <p class="why-choose-description">
+              Your satisfaction is our priority throughout the entire
+              construction process.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="parallax-section">
+        <div class="parallax-bg"></div>
+        <div class="parallax-content">
+          <div class="container">
+            <div class="parallax-text" data-aos="fade-up">
+              <h2>Bringing Your Vision to Life</h2>
+              <p>
+                From concept to completion, we're committed to delivering
+                exceptional quality and service.
+              </p>
+              <a href="#contact" class="btn btn-light"
+                >Start Your Project Today</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section-padding bg-light">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-subtitle">Testimonials</span>
+          <h2 class="section-title">What Our Clients Say</h2>
+          <div class="section-line"></div>
+          <p class="section-description">
+            Don't just take our word for it. Hear from our satisfied clients
+            about their experience working with BuildMaster.
+          </p>
+        </div>
+        <div class="testimonial-slider" data-aos="fade-up" data-aos-delay="200">
+          <div class="testimonial-track">
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-quote">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">
+                  BuildMaster transformed our vision into reality. Their
+                  attention to detail and quality craftsmanship exceeded our
+                  expectations. We couldn't be happier with our new home.
+                </p>
+                <div class="testimonial-author">
+                  <div class="testimonial-author-img">
+                    <img
+                      src="https://randomuser.me/api/portraits/women/65.jpg"
+                      alt="Sarah Johnson"
+                    />
+                  </div>
+                  <div class="testimonial-author-info">
+                    <h4 class="testimonial-author-name">Sarah Johnson</h4>
+                    <p class="testimonial-author-role">Homeowner</p>
+                  </div>
+                  <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-quote">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">
+                  We've worked with BuildMaster on multiple apartment projects.
+                  Their professionalism, adherence to timelines, and quality of
+                  work make them our go-to construction partner.
+                </p>
+                <div class="testimonial-author">
+                  <div class="testimonial-author-img">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/32.jpg"
+                      alt="Michael Chen"
+                    />
+                  </div>
+                  <div class="testimonial-author-info">
+                    <h4 class="testimonial-author-name">Michael Chen</h4>
+                    <p class="testimonial-author-role">Property Developer</p>
+                  </div>
+                  <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-quote">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">
+                  The BuildMaster team was exceptional in constructing our new
+                  office space. They understood our needs and delivered a
+                  functional, beautiful workspace on time and within budget.
+                </p>
+                <div class="testimonial-author">
+                  <div class="testimonial-author-img">
+                    <img
+                      src="https://randomuser.me/api/portraits/women/42.jpg"
+                      alt="Emily Rodriguez"
+                    />
+                  </div>
+                  <div class="testimonial-author-info">
+                    <h4 class="testimonial-author-name">Emily Rodriguez</h4>
+                    <p class="testimonial-author-role">Business Owner</p>
+                  </div>
+                  <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-quote">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">
+                  As an architect, I appreciate working with contractors who
+                  respect design integrity while offering practical solutions.
+                  BuildMaster excels at this balance, making them ideal
+                  partners.
+                </p>
+                <div class="testimonial-author">
+                  <div class="testimonial-author-img">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/75.jpg"
+                      alt="David Thompson"
+                    />
+                  </div>
+                  <div class="testimonial-author-info">
+                    <h4 class="testimonial-author-name">David Thompson</h4>
+                    <p class="testimonial-author-role">Architect</p>
+                  </div>
+                  <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-controls">
+            <button class="testimonial-prev">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="testimonial-dots">
+              <span class="testimonial-dot active"></span>
+              <span class="testimonial-dot"></span>
+              <span class="testimonial-dot"></span>
+              <span class="testimonial-dot"></span>
+            </div>
+            <button class="testimonial-next">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content" data-aos="fade-up">
+          <h2 class="cta-title">Let's Build Together</h2>
+          <p class="cta-text">
+            Ready to start your construction project? Contact us today for a
+            free consultation and quote. Let's turn your vision into reality.
+          </p>
+          <a href="#contact" class="btn btn-light">Get a Free Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-subtitle">Contact Us</span>
+          <h2 class="section-title">Get In Touch With Our Team</h2>
+          <div class="section-line"></div>
+          <p class="section-description">
+            Have questions or ready to start your project? Reach out to us using
+            the form below or visit our office.
+          </p>
+        </div>
+        <div class="contact-content">
+          <div
+            class="contact-form-container"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
+            <form class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="John Doe"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="john@example.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="(123) 456-7890" />
+              </div>
+              <div class="form-group">
+                <label for="service">Service Required</label>
+                <select id="service" required>
+                  <option value="" disabled selected>Select a service</option>
+                  <option value="home">Home Construction</option>
+                  <option value="apartment">Apartment Buildings</option>
+                  <option value="commercial">Commercial Offices</option>
+                  <option value="renovation">Renovations</option>
+                  <option value="interior">Interior Design</option>
+                  <option value="management">Project Management</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  placeholder="Tell us about your project..."
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
             </form>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="footer-bottom-content">
-          <p>&copy; <span id="current-year"></span> BuildMaster Construction. All rights reserved.</p>
-          <div class="footer-bottom-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
+          <div class="contact-info" data-aos="fade-left" data-aos-delay="200">
+            <div class="map-container">
+              <div id="map">
+                <!-- Google Map will be embedded here -->
+                <img
+                  src="https://maps.googleapis.com/maps/api/staticmap?center=40.7128,-74.0060&zoom=13&size=600x300&maptype=roadmap&markers=color:red%7C40.7128,-74.0060&key=YOUR_API_KEY"
+                  alt="Map"
+                  class="placeholder-map"
+                />
+              </div>
+            </div>
+            <div class="info-container">
+              <h3>Contact Information</h3>
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="info-text">
+                  <h4>Office Address</h4>
+                  <p>123 Construction Ave, Building City, BC 12345</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="info-text">
+                  <h4>Phone Number</h4>
+                  <p>(123) 456-7890</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info-text">
+                  <h4>Email Address</h4>
+                  <p>info@buildmaster.com</p>
+                </div>
+              </div>
+              <div class="business-hours">
+                <h4>Business Hours</h4>
+                <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                <p>Saturday: 9:00 AM - 2:00 PM</p>
+                <p>Sunday: Closed</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="back-to-top">
-      <a href="#home" ><i class="fas fa-chevron-up"></i></a>
-    </div>
-  </footer>
+    </section>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="script.js"></script>
-</body>
+    <!-- Partners Section -->
+    <section class="partners section-padding bg-light">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-subtitle">Our Partners</span>
+          <h2 class="section-title">Trusted By Industry Leaders</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="partners-slider" data-aos="fade-up" data-aos-delay="200">
+          <div class="partner-logo">
+            <img
+              src="https://via.placeholder.com/150x80?text=Partner+1"
+              alt="Partner 1"
+            />
+          </div>
+          <div class="partner-logo">
+            <img
+              src="https://via.placeholder.com/150x80?text=Partner+2"
+              alt="Partner 2"
+            />
+          </div>
+          <div class="partner-logo">
+            <img
+              src="https://via.placeholder.com/150x80?text=Partner+3"
+              alt="Partner 3"
+            />
+          </div>
+          <div class="partner-logo">
+            <img
+              src="https://via.placeholder.com/150x80?text=Partner+4"
+              alt="Partner 4"
+            />
+          </div>
+          <div class="partner-logo">
+            <img
+              src="https://via.placeholder.com/150x80?text=Partner+5"
+              alt="Partner 5"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-about">
+              <div class="footer-logo">
+                <i class="fas fa-building"></i>
+                <span>BuildMaster</span>
+              </div>
+              <p>
+                Premium construction services for residential and commercial
+                projects. Quality craftsmanship, innovative designs, and
+                exceptional customer service.
+              </p>
+              <div class="footer-social">
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+            <div class="footer-links">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-services">
+              <h3>Services</h3>
+              <ul>
+                <li><a href="#">Home Construction</a></li>
+                <li><a href="#">Apartment Buildings</a></li>
+                <li><a href="#">Commercial Offices</a></li>
+                <li><a href="#">Renovations</a></li>
+                <li><a href="#">Interior Design</a></li>
+                <li><a href="#">Project Management</a></li>
+              </ul>
+            </div>
+            <div class="footer-newsletter">
+              <h3>Newsletter</h3>
+              <p>
+                Subscribe to our newsletter for the latest updates and offers.
+              </p>
+              <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required />
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer-bottom-content">
+            <p>
+              &copy; <span id="current-year"></span> BuildMaster Construction.
+              All rights reserved.
+            </p>
+            <div class="footer-bottom-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="back-to-top">
+        <a href="#home"><i class="fas fa-chevron-up"></i></a>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
